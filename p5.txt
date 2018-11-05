@@ -29,9 +29,12 @@ en el repositorio.
 con Ekiga, un cliente de VoIP para GNOME. Responde a las siguientes
 cuestiones:
 * ¿Cuántos paquetes componen la captura?
+	954.
 * ¿Cuánto tiempo dura la captura?
+	56.149354 segundos.
 * ¿Qué IP tiene la máquina donde se ha efectuado la captura? ¿Se
 trata de una IP pública o de una IP privada? ¿Por qué lo sabes?
+	 
 
 3. Antes de analizar las tramas, mira las estadı́sticas generales que aparecen en el menú de Statistics. En el apartado de jerarquı́a de protocolos (Protocol Hierarchy) se puede ver el porcentaje del tráfico
 correspondiente al protocolo TCP y UDP.
