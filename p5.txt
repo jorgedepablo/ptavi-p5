@@ -34,21 +34,26 @@ cuestiones:
 	56.149354 segundos.
 * ¿Qué IP tiene la máquina donde se ha efectuado la captura? ¿Se
 trata de una IP pública o de una IP privada? ¿Por qué lo sabes?
-	 
+	192.168.1.34, es una IP privada ya que va en el rango 192.168.0.0-192.168.255.255 (Rango IP privadas clase C).  
 
 3. Antes de analizar las tramas, mira las estadı́sticas generales que aparecen en el menú de Statistics. En el apartado de jerarquı́a de protocolos (Protocol Hierarchy) se puede ver el porcentaje del tráfico
 correspondiente al protocolo TCP y UDP.
 * ¿Cuál de los dos es mayor? ¿Tiene esto sentido si estamos hablando
 de una aplicación que transmite en tiempo real?
+	Es mayor UDP(96.2%) que TCP(2.1%). Sí que tiene sentido ya que RTP se encapsula sobre UDP, ya que TCP no es válido para transmitir en tiempo real(se centra más de renvios de paquetes, fiabilidad etc..).
 * ¿Qué otros protocolos podemos ver en la jerarquı́a de protocolos?
+	SIP, SIP/SDP, RTP, ICMP, HTTP, H. 261, DNS, STUN, ARP. 
 ¿Cuales crees que son señal y cuales ruido?
-
+	Señal: SIP, SIP/SDP, RPT, HTTP, H. 261, STUN. 
+	Ruido: ICMP, DNS, ARP.
 4. Observa por encima el flujo de tramas en el menú de Statistics en IO
 Graphs. La captura que estamos viendo incluye desde la inicialización
 (registro) de la aplicación hasta su finalización, con una llamada entremedias.
 * Filtra por sip para conocer cuándo se envı́an paquetes SIP. ¿En
 qué segundos tienen lugar esos envı́os?
+	Segundo 7, 14, 16, 38, 39, 55
 * Y los paquetes con RTP, ¿cuándo se envı́an?
+	Del segundo 17-21 y del 23-28
 [Al terminar el ejercicio es recomendable hacer commit de los ficheros modificados]
 
 5. Analiza las dos primeras tramas de la captura.
